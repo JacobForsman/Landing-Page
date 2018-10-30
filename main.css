@@ -1,0 +1,79 @@
+/**
+
+Background image
+
+**/
+
+body {
+    background-color: rgb(41, 39, 40);
+    background-image: url("https://c1.staticflickr.com/5/4301/35721203150_65171c844b_b.jpg%22");
+    margin: 0;
+}
+
+/**
+
+Transparent part of the menu
+
+**/
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255,215,0, 0.5);
+}
+
+/**
+
+Font family and size of the navbar buttons
+
+**/
+
+ul.topnav li {
+    float: left;
+    font-family: arial;
+    font-size: 30px;
+}
+
+/**
+
+More stuff for the navbar
+
+**/
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/**
+
+Color on hover
+
+**/
+
+ul.topnav li a:hover:not(.active) {
+    background-color: rgb(240,215,0);
+}
+
+/**
+
+
+
+**/
+
+ul.topnav li a.active {
+    background-color: rgb(240,215,0);
+}
+
+ul.topnav li.right {float: right;
+}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
