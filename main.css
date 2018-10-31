@@ -77,3 +77,71 @@ ul.topnav li.right {float: right;
     ul.topnav li.right, 
     ul.topnav li {float: none;}
 }
+
+
+#truck {
+    width: 60px;
+}
+
+#wallet {
+    width: 60px;
+}
+
+#lock {
+    width: 60px;
+}
+
+#card {
+    width: 60px;
+}
+
+#truck,
+#wallet,
+#lock,
+#card {
+    display: flex;
+    justify-content: center;
+    margin-left: 800px;
+    background-color: rgb(248, 245, 39);
+    border-radius: 20px;
+    margin: auto;
+}
+
+@media screen and (max-width: 600px){
+#truck,
+#wallet,
+#lock,
+#card,
+.text-div {
+    
+}
+}
+
+h3 {
+    color: rgb(248, 245, 39);
+    font-size: 27px;
+    margin-top: 15px;
+    display: flex;
+    font-family: 'Spicy Rice', cursive;
+    font-family: 'Baloo Bhaijaan', cursive;
+    margin: auto;
+    margin: 18px;
+}
+
+
+#big-div {
+    display: flex;
+    margin-left: 40%;
+    padding: 50px;
+}
+
+#text-div {
+    margin-left: 20px;
+}
+
+
+#header-img {
+    width: 105px;
+    margin: auto;
+    margin-left: 26%;
+}
