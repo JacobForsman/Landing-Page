@@ -155,3 +155,20 @@ margin-top: 10px;
    margin-bottom: 15px;   
     }
 }
+
+@media screen and (max-width: 355px){
+    #truck,
+    #watch,
+    #lock,
+    #card    {
+    position: relative;
+    margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 355px){
+   #text-div {
+       position: relative;
+       top: -400px;
+   }
+}
