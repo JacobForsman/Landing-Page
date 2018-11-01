@@ -87,7 +87,9 @@ Makes the navbar shrink if the width is below 600px
 
 @media screen and (max-width: 675px){
     ul.topnav li.Newsletter,
-    ul.topnav li {float: none;}
+    ul.topnav li {
+        float: none;
+    }
 }
 
 /**
@@ -125,6 +127,7 @@ Background color, border radius, margin etc. for the icons
     border-radius: 10px;
     margin-top: 14px;
     margin-left: 10px;
+    padding: 2px;
 }
 
 
@@ -134,7 +137,7 @@ Background color, border radius, margin etc. for the icons
     font-size: 30px;
     font-family: arial;
     margin-left: 85px;
-    bottom: 305px; 
+    bottom: 310px; 
 }
 
 
