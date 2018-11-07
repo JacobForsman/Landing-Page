@@ -1,7 +1,6 @@
+
 /**
-
-Background image
-
+Background 
 **/
 
 body {
@@ -9,10 +8,16 @@ body {
     margin: 0;
 }
 
+
+#header {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+}
+
+
 /**
-
 Transparent part of the menu
-
 **/
 
 ul.topnav {
@@ -28,9 +33,7 @@ ul.topnav {
 }
 
 /**
-
 Font family and size of the navbar buttons
-
 **/
 
 ul.topnav li {
@@ -40,9 +43,7 @@ ul.topnav li {
 }
 
 /**
-
 More stuff for the navbar
-
 **/
 
 ul.topnav li a {
@@ -54,9 +55,7 @@ ul.topnav li a {
 }
 
 /**
-
 Color on hover
-
 **/
 
 ul.topnav li a:hover:not(.active) {
@@ -64,9 +63,7 @@ ul.topnav li a:hover:not(.active) {
 }
 
 /**
-
 Color of the Home button
-
 **/
 
 ul.topnav li a.Home {
@@ -74,9 +71,7 @@ ul.topnav li a.Home {
 }
 
 /**
-
 Makes the Newsletter button go to the right
-
 **/
 
 ul.topnav li.Newsletter {float: right;
@@ -93,9 +88,7 @@ ul.topnav li.Newsletter {float: right;
        }
 
 /**
-
 Icon size
-
 **/
 
 #truck {
@@ -112,9 +105,7 @@ Icon size
 }
 
 /**
-
 Background color, border radius, margin etc. for the icons
-
 **/
 
 #truck,
@@ -131,6 +122,12 @@ Background color, border radius, margin etc. for the icons
 }
 
 
+/** 
+
+Text for the icons
+
+**/
+
 #text-div {
    position: relative;
     color: rgb(0,0,0);
@@ -140,10 +137,20 @@ Background color, border radius, margin etc. for the icons
     bottom: 310px; 
 }
 
+/**
+
+Video position
+
+**/
+
 #video {
-    margin-top: 67px;
-    
+    margin-top: 64px;
 }
+/**
+
+Position of the "responsive" watch
+
+**/
 
 .watch {
     position: absolute;
@@ -151,21 +158,24 @@ Background color, border radius, margin etc. for the icons
     z-index: -1;
 }
 
-#header-img {
-width: 100px;
-margin-top: 10px;
-}
+/**
+
+The logo
+
+**/
 
 #header-img {
-    width: 210px;
+    width: 100px;
+    margin-top: 9px;
+    width: 200px;
     height: 60px;
     margin: auto;
-    margin-left: 60%;
-    margin-top: -1px;
-
-    
+    margin-left: 50%;
 }
 
+
+
+/*--@MEDIA--------*/
 
 @media screen and (max-width: 675px){
     ul.topnav img {
@@ -179,17 +189,18 @@ margin-top: 10px;
     ul.topnav li {float: none;}
     img.bolyx {float: none;}
 
-    #header-img {
-        width: 100px;
-        height: 50px;
-        margin-top: 10px;
-        margin: auto;
-    } 
-    iframe {
+  
+    
+    /*---VIDEO-----*/
+
+iframe {
     opacity: 0;
     z-index: -1;
     }
-    .watch {
+
+
+    /*-----Watch--------*/
+.watch {
         width: 300px;
         height: 300px;
         position: absolute;
@@ -200,6 +211,9 @@ margin-top: 10px;
 
     }
 }
+
+
+/*-----MORE @MEDIA------*/
 
 @media screen and (max-width: 424px){
     .watch {
@@ -215,8 +229,28 @@ margin-top: 10px;
         width: 100px;
         height: 200px;;
     }
-
+    #header-img {
+        justify-content: center;
+        display: flex;
+        margin: auto;
+    }
     
+    hr {
+       display: flex;
+       justify-content: center;
+       margin: auto;
+       width: 160%;
+       margin-bottom: 160px; 
+    }
+    #form {
+        position: relative;
+        left: 25%;
+    }
+    #newsletter {
+        position: relative;
+        left: 21%;
+    }
+
 }
 
 @media screen and (max-width: 365px){
@@ -226,18 +260,18 @@ margin-top: 10px;
         right: 25%;
          
     }
-
+    
 
 }
 
 
-@media screen and (max-width: 355px){
+@media screen and (max-width: 385px){
     #truck,
     #watch,
     #lock,
     #card    {
     position: relative;
-    margin-top: 40px;
+    margin-top: 8px;
     }
 }
 
@@ -247,6 +281,8 @@ margin-top: 10px;
        top: -400px;
    }
 }
+
+/*-----TEXT-----------*/
 
 #h3text {
     color: #a37e2c;
@@ -261,6 +297,19 @@ p {
     color: #838383;
     font-family: helvetica;
 }
+
+@media screen and (max-width: 850px){
+    #products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: 25%;
+    top: 100px;
+    }
+}
+
+/*-------------PRODUCTS--------------*/
 
 #image1 {
 width: 360px;
@@ -314,7 +363,9 @@ margin-right: 20px;
     text-decoration: none;
 }
 
-#contact {
+/*-----------NEWSLETTER------------*/
+
+#newsletter {
     display: flex;
     justify-content: center;
     margin-top: 35px;
@@ -322,13 +373,55 @@ margin-right: 20px;
 }
 
 
-form {
+/*--------@MEDIA----------------*/
+
+@media screen and (max-width: 850px){
+    #newsletter {
+        margin-top: 350px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    #image2 {
+    position: relative;
+    left: -20px;
+    margin-top: 50px;
+    }
+}    
+
+@media screen and (max-width: 850px){
+#info {
+margin-top: 180px;
+    }
+}
+
+
+
+
+/*-------------MORE ABOUT NEWSLETTER-----------*/
+
+#form {
     display: flex;
     justify-content: center;
     margin-top: -10px;
 }
 
+#info {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/*--------HR------------*/
+hr {
+    margin-top: -250px;
+}
+
+
+
 /*-----------FONTS--------------
 font-family: 'Orbitron', sans-serif;
-
 */
